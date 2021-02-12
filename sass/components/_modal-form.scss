@@ -53,8 +53,6 @@
 
   fill: $titleTextColor;
 
-  transform: translateY(-50%);
-
   @include transitionMain(fill);
 
   .modal-form__label:focus-within & {
