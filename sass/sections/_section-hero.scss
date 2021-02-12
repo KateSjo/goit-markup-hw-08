@@ -33,13 +33,13 @@
 
   @media screen and (min-width: 768px) {
     @include heroBgImage(
-      '../images/background-images/background-768-400@1x.jpg'
+      '../../images/background-images/background-768-400@1x.jpg'
     );
   }
 
   @media screen and (min-width: 1200px) {
     @include heroBgImage(
-      '../images/background-images/background-1600-600@1x.jpg'
+      '../../images/background-images/background-1600-600@1x.jpg'
     );
   }
 
@@ -49,18 +49,18 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     @include heroBgImage(
-      '../images/background-images/background-960-800@2x.jpg'
+      '../../images/background-images/background-960-800@2x.jpg'
     );
 
     @media screen and (min-width: 768px) {
       @include heroBgImage(
-        '../images/background-images/background-1536-800@2x.jpg'
+        '../../images/background-images/background-1536-800@2x.jpg'
       );
     }
 
     @media screen and (min-width: 1200px) {
       @include heroBgImage(
-        '../images/background-images/background-3200-1200@2x.jpg'
+        '../../images/background-images/background-3200-1200@2x.jpg'
       );
     }
   }
