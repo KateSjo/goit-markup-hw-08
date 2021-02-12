@@ -18,10 +18,10 @@
                 <nav class="site-header__nav">
                     <ul class="site-nav__list list">
                         <li class="site-nav__item">
-                            <a href="./index.html" class="site-nav__link link">Студия</a>
+                            <a href="./index.html" class="site-nav__link site-nav__link--current link">Студия</a>
                         </li>
                         <li class="site-nav__item">
-                            <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a>
+                            <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
                         </li>
                         <li class="site-nav__item">
                             <a href="#site-footer" class="site-nav__link link">Контакты</a>
@@ -67,7 +67,7 @@
                 data-menu-button>
                 <svg width="40" height="40">
                     <use href="./images/symbol-defs2.svg#icon-menu-burger" class="site-header__icon-burger"></use>
-                    <use href="./images/symbol-defs.svg#icon-cross" class="site-header__icon-cross"></use>
+                    <use href="./images/symbol-defs2.svg#icon-cross" class="site-header__icon-cross"></use>
                 </svg>
             </button>
         </div>
@@ -75,453 +75,429 @@
 
     <main>
         
-        <section class="section works">
+        <section class="hero">
+            <div class="hero__overlay">
+                <div class="hero__title-container">
+                    <h1 class="page-title hero__title">
+                        Эффективные решения для вашего бизнеса
+                    </h1>
+                </div>
+                <button class="hero-button main-button" type="button" data-modal-open>
+                    Заказать услугу
+                </button>
+            </div>
+        </section>
+
+        
+        <section class="section features">
             <div class="container">
-                <h1 class="works_section-title visually-hidden">Наши работы</h1>
-                <ul class="filter list">
-                    <li class="filter__item">
-                        <button class="portfolio-button portfolio-button--active" type="button">
-                            Все
-                        </button>
+                <h2 class="features__section__title visually-hidden">
+                    Наши преимущества
+                </h2>
+                <ul class="features__list list">
+                    <li class="features__item">
+                        <div class="features__thumb">
+                            <svg class="features__icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="features__heading">Внимание к деталям</h3>
+                        <p class="features__details">
+                            Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.
+                        </p>
                     </li>
-                    <li class="filter__item">
-                        <button class="portfolio-button" type="button">Веб-сайты</button>
+                    <li class="features__item">
+                        <div class="features__thumb">
+                            <svg class="features__icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+
+                        <h3 class="features__heading">Пунктуальность</h3>
+                        <p class="features__details">
+                            Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.
+                        </p>
                     </li>
-                    <li class="filter__item">
-                        <button class="portfolio-button" type="button">Приложения</button>
+                    <li class="features__item">
+                        <div class="features__thumb">
+                            <svg class="features__icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-computer"></use>
+                            </svg>
+                        </div>
+                        <h3 class="features__heading">Планирование</h3>
+                        <p class="features__details">
+                            Равным образом консультация с широким активом в значительной
+                            степени обуславливает.
+                        </p>
                     </li>
-                    <li class="filter__item">
-                        <button class="portfolio-button" type="button">Дизайн</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="portfolio-button" type="button">Маркетинг</button>
+                    <li class="features__item">
+                        <div class="features__thumb">
+                            <svg class="features__icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-astronaut_stars"></use>
+                            </svg>
+                        </div>
+                        <h3 class="features__heading">Современные технологии</h3>
+                        <p class="features__details">
+                            Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.
+                        </p>
                     </li>
                 </ul>
+            </div>
+        </section>
 
-                <ul class="work-samples list">
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-technocrack-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-technocrack-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-technocrack-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-technocrack-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-technocrack-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-technocrack-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-technocrack-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="./images/portfolio/img-portfolio-technocrack-450-294@1x.jpg"
-                                        alt="Макбук с открытой веб-страницей" width="450" />
-                                </picture>
+        
+        <section class="section business">
+            <div class="container">
+                <h2 class="business__section__title section__title">
+                    Чем мы занимаемся
+                </h2>
+                <ul class="business__list list">
+                    <li class="business__item">
+                        <div class="business__thumb">
+                            <picture>
+                                <source srcset="
+                      ./images/work/img-our-work1-370-294@1x.webp 1x,
+                      ./images/work/img-our-work1-740-588@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      ./images/work/img-our-work1-370-294@1x.jpg 1x,
+                      ./images/work/img-our-work1-740-588@2x.jpg 2x
+                    " type="image/jpeg" />
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Технокряк это современная площадка распространения
-                                        коронавируса. Компании используют эту платформу для
-                                        цифрового шпионажа и атак на защищённые сервера
-                                        конкурентов.
-                                    </p>
-                                </div>
+                                <img class="business__photo photo" 
+                                src="./images/work/img-our-work1-370-294@.jpg " 
+                                alt="Разработчик десктопных приложений за работой" width="370" />
+                    </picture>
+                            <div class="business__title-overlay">
+                                <h3 class="business__title">Десктопные приложения</h3>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Технокряк</h2>
-                                <p class="sample__category">Веб-сайт</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-basketball-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-basketball-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-basketball-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-basketball-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-basketball-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-basketball-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-basketball-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-basketball-450-294@1x.jpg"
-                                        alt="Два баскетболиста в борьбе за мяч" width="450" />
-                                </picture>
+                    <li class="business__item">
+                        <div class="business__thumb">
+                            <picture>
+                                <source srcset="
+                      ./images/work/img-our-work2-370-294@1x.webp 1x,
+                      ./images/work/img-our-work2-740-588@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      ./images/work/img-our-work2-370-294@1x.jpg 1x,
+                      ./images/work/img-our-work2-740-588@2x.jpg 2x
+                    " type="image/jpeg" />
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+                                <img class="business__photo photo"
+                                    src="=./images/work/img-our-work2-370-294@.jpg "
+                                    alt="Разработчик мобильных приложений за работой" width="370" />
+                            </picture>
+
+                            <div class="business__title-overlay">
+                                <h3 class="business__title">Мобильные приложения</h3>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Постер New Orlean vs Golden Star</h2>
-                                <p class="sample__category">Дизайн</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-seafood-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-seafood-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-seafood-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-seafood-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-seafood-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-seafood-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-seafood-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-seafood-450-294@1x.jpg"
-                                        alt="Логотип - название ресторана на фоне рыбы" width="450" />
-                                </picture>
+                    <li class="business__item">
+                        <div class="business__thumb">
+                            <picture>
+                                <source srcset="
+                      ./images/work/img-our-work3-370-294@1x.webp 1x,
+                      ./images/work/img-our-work3-740-588@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      ./images/business/img-our-work3-370-294@1x.jpg 1x,
+                      ./images/business/img-our-work3-740-588@2x.jpg 2x
+                    " type="image/jpeg" />
+                                <img class="business__photo photo"
+                                    src="=./images/work/img-our-work3-370-294@.jpg "
+                                    alt="Дизайнер за работой" width="370" />
+                            </picture>
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+                            <div class="business__title-overlay">
+                                <h3 class="business__title">Дизайнерские решения</h3>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Ресторан Seafood</h2>
-                                <p class="sample__category">Приложение</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-prime-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-prime-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-prime-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-prime-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-prime-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-prime-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-prime-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-prime-450-294@1x.jpg"
-                                        alt="Черные наушники на пустом фоне" width="450" />
-                                </picture>
+                </ul>
+            </div>
+        </section>
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+        
+        <section class="section team">
+            <div class="container">
+                <h2 class="team__section__title section__title">Наша команда</h2>
+                <ul class="team__list list">
+                    <li class="team__item">
+                        <div class="person">
+                            <picture>
+                                <source srcset="
+                      ./images/team/photo-igor-demyanenko-450-460@1x.webp 1x,
+                      ./images/team/photo-igor-demyanenko-900-920@2x.webp 2x
+                    " media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-igor-demyanenko-450-460@1x.jpg 1x,
+                      ./images/team/photo-igor-demyanenko-900-920@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg" />
+                                <source srcset="
+                      ./images/team/photo-igor-demyanenko-354-374@1x.webp 1x,
+                      ./images/team/photo-igor-demyanenko-708-748@2x.webp 2x
+                    " media="(max-width: 1199px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-igor-demyanenko-354-374@1x.jpg 1x,
+                      ./images/team/photo-igor-demyanenko-708-748@2x.jpg 2x
+                    " media="(max-width: 1199px)" type="image/jpeg" />
+                                <source srcset="
+                      
+                      ./images/team/photo-igor-demyanenko-540-520@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      
+                      ./images/team/photo-igor-demyanenko-540-520@2x.jpg 2x
+                    " type="image/jpeg" />
+                                <img class="person__photo photo"
+                                    src="=./images/team/photo-igor-demyanenko-450-460@.jpg"
+                                    alt="Фото нашего сотрудника (Игорь)" width="450" />
+                            </picture>
+
+                            <h3 class="person__name">Игорь Демьяненко</h3>
+                            <p class="person__position">Product Designer</p>
+                            <div class="person__social-container">
+                                <ul class="social list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Проект Prime</h2>
-                                <p class="sample__category">Маркетинг</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-boxes-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-boxes-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-boxes-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-boxes-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-boxes-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-boxes-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-boxes-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-boxes-450-294@1x.jpg"
-                                        alt="Две коробки: белая и бежевая" width="450" />
-                                </picture>
+                    <li class="team__item">
+                        <div class="person">
+                            <picture>
+                                <source srcset="
+                      ./images/team/photo-olga-repina-450-460@1x.webp 1x,
+                      ./images/team/photo-olga-repina-900-920@2x.webp 2x
+                    " media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-olga-repina-450-460@1x.jpg 1x,
+                      ./images/team/photo-olga-repina-900-920@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg" />
+                                <source srcset="
+                      ./images/team/photo-olga-repina-354-374@1x.webp 1x,
+                      ./images/team/photo-olga-repina-708-748@2x.webp 2x
+                    " media="(max-width: 1199px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-olga-repina-354-374@1x.jpg 1x,
+                      ./images/team/photo-olga-repina-708-748@2x.jpg 2x
+                    " media="(max-width: 1199px)" type="image/jpeg" />
+                                <source srcset="
+                      
+                      ./images/team/photo-olga-repina-540-520@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      
+                      ./images/team/photo-olga-repina-540-520@2x.jpg 2x
+                    " type="image/jpeg" />
+                                <img class="person__photo photo" src="=./images/team/photo-olga-repina-450-460@.jpg"
+                                    alt="Фото нашего сотрудника (Ольга)" width="450" />
+                            </picture>
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+                            <h3 class="person__name">Ольга Репина</h3>
+                            <p class="person__position">Frontend Developer</p>
+                            <div class="person__social-container">
+                                <ul class="social list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Проект Boxes</h2>
-                                <p class="sample__category">Приложение</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-inspiration-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-inspiration-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-inspiration-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-inspiration-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-inspiration-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-inspiration-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-inspiration-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-inspiration-450-294@1x.jpg"
-                                        alt="Монитор с открытой веб-страницей" width="450" />
-                                </picture>
-
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+                    <li class="team__item">
+                        <div class="person">
+                            <picture>
+                                <source srcset="
+                      ./images/team/photo-nikolay-tarasov-450-460@1x.webp 1x,
+                      ./images/team/photo-nikolay-tarasov-900-920@2x.webp 2x
+                    " media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-nikolay-tarasov-450-460@1x.jpg 1x,
+                      ./images/team/photo-nikolay-tarasov-900-920@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg" />
+                                <source srcset="
+                      ./images/team/photo-nikolay-tarasov-354-374@1x.webp 1x,
+                      ./images/team/photo-nikolay-tarasov-708-748@2x.webp 2x
+                    " media="(max-width: 1199px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-nikolay-tarasov-354-374@1x.jpg 1x,
+                      ./images/team/photo-nikolay-tarasov-708-748@2x.jpg 2x
+                    " media="(max-width: 1199px)" type="image/jpeg" />
+                                <source srcset="
+                      
+                      ./images/team/photo-nikolay-tarasov-540-520@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      
+                      ./images/team/photo-nikolay-tarasov-540-520@2x.jpg 2x
+                    " type="image/jpeg" />
+                                <img class="person__photo photo"
+                                    src="=./images/team/photo-nikolay-tarasov-450-460@.jpg"
+                                    alt="Фото нашего сотрудника (Николай)" width="450" />
+                            </picture>
+                            <h3 class="person__name">Николай Тарасов</h3>
+                            <p class="person__position">Marketing</p>
+                            <div class="person__social-container">
+                                <ul class="social list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Inspiration has no Borders</h2>
-                                <p class="sample__category">Веб-сайт</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-limited-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-limited-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-limited-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-limited-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-limited-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-limited-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-limited-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-limited-450-294@1x.jpg"
-                                        alt="Раскрытый журнал" width="450" />
-                                </picture>
+                    <li class="team__item">
+                        <div class="person">
+                            <picture>
+                                <source srcset="
+                      ./images/team/photo-mikhail-yermakov-450-460@1x.webp 1x,
+                      ./images/team/photo-mikhail-yermakov-900-920@2x.webp 2x
+                    " media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-mikhail-yermakov-450-460@1x.jpg 1x,
+                      ./images/team/photo-mikhail-yermakov-900-920@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg" />
+                                <source srcset="
+                      ./images/team/photo-mikhail-yermakov-354-374@1x.webp 1x,
+                      ./images/team/photo-mikhail-yermakov-708-748@2x.webp 2x
+                    " media="(max-width: 1199px)" type="image/webp" />
+                                <source srcset="
+                      ./images/team/photo-mikhail-yermakov-354-374@1x.jpg 1x,
+                      ./images/team/photo-mikhail-yermakov-708-748@2x.jpg 2x
+                    " media="(max-width: 1199px)" type="image/jpeg" />
+                                <source srcset="
+                     
+                      ./images/team/photo-mikhail-yermakov-540-520@2x.webp 2x
+                    " type="image/webp" />
+                                <source srcset="
+                      
+                      ./images/team/photo-mikhail-yermakov-540-520@2x.jpg 2x
+                    " type="image/jpeg" />
+                                <img class="person__photo photo"
+                                    src="=./images/team/photo-mikhail-yermakov-450-460@.jpg"
+                                    alt="Фото нашего сотрудника (Михаил)" width="450" />
+                            </picture>
 
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
+                            <h3 class="person__name">Михаил Ермаков</h3>
+                            <p class="person__position">UI Designer</p>
+                            <div class="person__social-container">
+                                <ul class="social list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Издание Limited Edition</h2>
-                                <p class="sample__category">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-lab-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-lab-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-lab-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-lab-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-lab-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-lab-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-lab-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-lab-450-294@1x.jpg"
-                                        alt="Бирка с названием проекта" width="450" />
-                                </picture>
-
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Проект LAB</h2>
-                                <p class="sample__category">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work-samples__item">
-                        <a href="" class="sample link">
-                            <div class="sample__thumb">
-                                <picture>
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-450-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-growing-900-588@2x.webp 2x
-                      " media="(max-width: 767px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-450-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-growing-900-588@2x.jpg 2x
-                      " media="(max-width: 767px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-354-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-growing-708-588@2x.webp 2x
-                      " media="(max-width: 1199px)" type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-354-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-growing-708-588@2x.jpg 2x
-                      " media="(max-width: 1199px)" type="image/jpeg" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-370-294@1x.webp 1x,
-                        ./images/portfolio/img-portfolio-growing-740-588@2x.webp 2x
-                      " type="image/webp" />
-                                    <source srcset="
-                        ./images/portfolio/img-portfolio-growing-370-294@1x.jpg 1x,
-                        ./images/portfolio/img-portfolio-growing-740-588@2x.jpg 2x
-                      " type="image/jpeg" />
-                                    <img class="sample__photo photo"
-                                        src="=./images/portfolio/img-portfolio-growing-450-294@1x.jpg"
-                                        alt="Ноутбук с открытой веб-страницей" width="450" />
-                                </picture>
-
-                                <div class="sample__overlay">
-                                    <p class="sample__details">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Laborum natus corporis sapiente maiores at adipisci, quia
-                                        expedita possimus officiis.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sample__meta">
-                                <h2 class="sample__name">Growing Business</h2>
-                                <p class="sample__category">Приложение</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -529,6 +505,59 @@
     </main>
 
     
+    <section class="section clients">
+        <div class="container">
+            <h2 class="clients__section__title section__title">
+                Постоянные клиенты
+            </h2>
+            <ul class="clients__list list">
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon" >
+                            <use href="./images/symbol-defs.svg#icon-client-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon" >
+                            <use href="./images/symbol-defs.svg#icon-client-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon" >
+                            <use href="./images/symbol-defs.svg#icon-client-3"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon" width="80" height="42">
+                            <use href="./images/symbol-defs.svg#icon-client-4"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon" >
+                            <use href="./images/symbol-defs.svg#icon-client-5"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a href="" class="clients__link">
+                        <svg class="clients__icon">
+                            <use href="./images/symbol-defs.svg#icon-client-6"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+   
     <footer class="site-footer" id="site-footer">
         <div class="site-footer__container container">
             <div class="site-footer__address-block">
@@ -585,6 +614,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="site-footer__subscribe-block">
                 <p class="site-footer__block-title">Подпишитесь на рассылку</p>
                 <form class="subscribe__form">
@@ -599,9 +629,74 @@
                     </button>
                 </form>
             </div>
+            
         </div>
-
     </footer>
+
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form class="modal-form">
+                <p class="modal-form__title">
+                    Оставьте свои данные, мы вам перезвоним
+                </p>
+                <div class="modal-form__input">
+                    <label class="modal-form__label">
+                        <span class="modal-form__caption">Имя</span>
+
+                        <svg class="modal-form__icon" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-user"></use>
+                        </svg>
+                        <input type="text" name="name" class="modal-form__field" />
+                    </label>
+                </div>
+                <div class="modal-form__input">
+                    <label class="modal-form__label">
+                        <span class="modal-form__caption">Телефон</span>
+
+                        <svg class="modal-form__icon" width="13" height="13">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <input type="tel" name="tel" class="modal-form__field" />
+                    </label>
+                </div>
+                <div class="modal-form__input">
+                    <label class="modal-form__label">
+                        <span class="modal-form__caption">Почта</span>
+
+                        <svg class="modal-form__icon" width="15" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        <input type="email" name="email" class="modal-form__field" />
+                    </label>
+                </div>
+                <label class="modal-form__label">
+                    <span class="modal-form__caption">Комментарий</span>
+                    <textarea name="comment" class="modal-form__field modal-form__field--comment" rows="6"
+                        placeholder="Введите текст"></textarea>
+                </label>
+
+                <input type="checkbox" name="licence" class="modal-form__checkbox visually-hidden"
+                    id="licence-checkbox" />
+                <label class="modal-form__licence-declaration" for="licence-checkbox">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="modal-form__licence-link link">
+                        Условия договора</a>
+                </label>
+
+                <button class="main-button modal__submit-btn" type="submit">
+                    Отправить
+                </button>
+
+                <button class="modal__close-btn" type="button" data-modal-close>
+                    <svg class="modal__close-icon" width="11" height="11">
+                        <use href="./images/symbol-defs2.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 
