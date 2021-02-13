@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('./images/background-images/background-480-400@1x.jpg');
+      url('../../images/background-images/background-480-400@1x.jpg');
   }
   @media screen and (min-width: 768px) {
     background-size: 768px 400px;
@@ -38,7 +38,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('./images/background-images/background-768-400@1x.jpg');
+        url('../../images/background-images/background-768-400@1x.jpg');
     }
   }
   @media screen and (min-width: 1200px) {
@@ -60,7 +60,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('./images/background-images/background-1600-600@1x.jpg');
+        url('../../images/background-images/background-1600-600@1x.jpg');
     }
   }
 
@@ -98,5 +98,3 @@
     line-height: 1.36;
   }
 }
-
-
