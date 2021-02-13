@@ -27,3 +27,19 @@
     ),
     url(#{$url});
 }
+
+@mixin font($url) {
+  background-image: linear-gradient(
+      to right,
+      $overlayShadingColor,
+      $overlayShadingColor
+    ),
+    url(#{$url});
+}
+
+@mixin fonts($fw: 900, $fs: 26px, $lh: 1.61, $ls: 0.06em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
