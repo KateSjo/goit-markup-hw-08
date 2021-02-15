@@ -1453,7 +1453,7 @@ summary {
 }
 
 .hero__title {
-  width: 696px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -1466,9 +1466,17 @@ summary {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .hero__title {
-    width: 360px;
+    font-size: calc((100vw - 320px) / (480 - 320) * (26 - 20) + 20px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    padding-left: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+    padding-right: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+    width: 100%;
   }
 }
 
