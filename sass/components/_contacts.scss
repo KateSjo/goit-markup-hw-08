@@ -49,8 +49,6 @@
       font-size: calc(24px + (34 - 24) * (100vw - 300px) / (380 - 300));
     }
     @media screen and (min-width: 380px) and (max-width: 768px) {
-      color: $accentColor;
-
       font-size: 34px;
       line-height: 1.18;
     }
