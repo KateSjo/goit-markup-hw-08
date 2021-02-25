@@ -27,6 +27,8 @@
   }
 }
 
+//////
+
 .work-samples {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -120,6 +122,13 @@
   .sample:hover &,
   .sample:focus & {
     transform: translateY(-100%);
+  }
+
+  @media screen and (min-width: 768px) {
+    .sample:hover &,
+    .sample:focus & {
+      transform: translateY(-100%);
+    }
   }
 }
 
