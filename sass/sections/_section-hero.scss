@@ -109,11 +109,7 @@
   @media screen and (max-width: 479px) {
     font-size: 16px;
   }
-  @media screen and (max-width: 1199px) {
-    /*padding-left: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
-    padding-right: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
-    width: 100%;*/
-  }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
