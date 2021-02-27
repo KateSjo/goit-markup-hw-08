@@ -35,7 +35,7 @@
                                 <svg class="contact-list__icon" width="10" height="16">
                                     <use href="./images/symbol-defs.svg#icon-mobile"></use>
                                 </svg>
-                                <span>+38 096 111 11 11</span>
+                                +38 096 111 11 11
                             </a>
                         </li>
                         <li class="contact-list__item">
@@ -233,21 +233,24 @@
                         <div class="person">
                             <picture>
                                 
-                                <source srcset="
-                                                  ./images/team/photo-igor-demyanenko-450-460@1x.jpg 1x,
-                                                  ./images/team/photo-igor-demyanenko-900-920@2x.jpg 2x
-                                                " media="(max-width: 767px)" type="image/jpeg" />
+                                <source  media="(min-width: 1200px)"
+                                srcset="
+                                ./images/team/Igor-desktop.jpg 1x,
+                                ./images/team/Igor-desktop@2x.jpg 1x
+                                " />
                                
-                                <source srcset="
-                                                  ./images/team/photo-igor-demyanenko-354-374@1x.jpg 1x,
-                                                  ./images/team/photo-igor-demyanenko-708-748@2x.jpg 2x
-                                                " media="(max-width: 1199px)" type="image/jpeg" />
-                                
-                                <source srcset="
-                                                  ./images/team/photo-igor-demyanenko-270-260@1x.jpg 1x,
-                                                  ./images/team/photo-igor-demyanenko-540-520@2x.jpg 2x
-                                                " media="(min-width: 1200px)" type="image/jpeg" />
-                                <img class="person__photo photo" src="./images/team/photo-igor-demyanenko-270-260@1x.jpg"
+                                <source media="(min-width: 768px)" 
+                                srcset="
+                                ./images/team/Igor-tablet.jpg 1x,
+                                ./images/team/Igor-tablet@2x.jpg 1x
+                                " />
+                               
+                                <img 
+                                 srcset="
+                                ./images/team/Igor-mobile.jpg 1x,
+                                ./images/team/Igor-mobile@2x.jpg 1x
+                                " 
+                                class="person__photo photo" src="./images/team/Igor-mobile.jpg"
                                     alt="Фото нашего сотрудника (Игорь)" />
                             </picture>
 
@@ -289,23 +292,24 @@
                     </li>
                     <li class="team__item">
                         <div class="person">
-                            <picture>
-                                <source srcset="
-                                                  ./images/team/photo-olga-repina-450-460@1x.jpg 1x,
-                                                  ./images/team/photo-olga-repina-900-920@2x.jpg 2x
-                                                " media="(max-width: 767px)" type="image/jpeg" />
-                                <source srcset="
-                                                  ./images/team/photo-olga-repina-354-374@1x.jpg 1x,
-                                                  ./images/team/photo-olga-repina-708-748@2x.jpg 2x
-                                                " media="(max-width: 1199px)" type="image/jpeg" />
-                               
-                                <source srcset="
-                                                  ./images/team/photo-olga-repina-270-260@1x.jpg 1x,
-                                                  ./images/team/photo-olga-repina-540-520@2x.jpg 2x
-                                                " media="(min-width: 1200px)" type="image/jpeg" />
-                                <img class="person__photo photo" src="./images/team/photo-olga-repina-270-260@1x.jpg"
-                                    alt="Фото нашего сотрудника (Ольга)"  />
-                            </picture>
+                        <picture>
+                        
+                            <source media="(min-width: 1200px)" srcset="
+                                                        ./images/team/Olga-desktop.jpg 1x,
+                                                        ./images/team/Olga-desktop@2x.jpg 1x
+                                                        " />
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                                        ./images/team/Olga-tablet.jpg 1x,
+                                                        ./images/team/Olga-tablet@2x.jpg 1x
+                                                        " />
+                        
+                            <img srcset="
+                                                        ./images/team/Olga-mobile.jpg 1x,
+                                                        ./images/team/Olga-mobile@2x.jpg 1x
+                                                        " class="person__photo photo" src="./images/team/Olga-mobile.jpg"
+                                alt="Фото нашего сотрудника (Ольга)" />
+                        </picture>
 
                             <h3 class="person__name">Ольга Репина</h3>
                             <p class="person__position">Frontend Developer</p>
@@ -347,23 +351,22 @@
                     <li class="team__item">
                         <div class="person">
                             <picture>
-                    
-                                <source srcset="
-                                                  ./images/team/photo-nikolay-tarasov-450-460@1x.jpg 1x,
-                                                  ./images/team/photo-nikolay-tarasov-900-920@2x.jpg 2x
-                                                " media="(max-width: 767px)" type="image/jpeg" />
-                        
-                                <source srcset="
-                                                  ./images/team/photo-nikolay-tarasov-354-374@1x.jpg 1x,
-                                                  ./images/team/photo-nikolay-tarasov-708-748@2x.jpg 2x
-                                                " media="(max-width: 1199px)" type="image/jpeg" />
-                               
-                                <source srcset="
-                                                  ./images/team/photo-nikolay-tarasov-270-260@1x.jpg 1x,
-                                                  ./images/team/photo-nikolay-tarasov-540-520@2x.jpg 2x
-                                                " media="(min-width: 1200px)" type="image/jpeg" />
-                                <img class="person__photo photo" src="./images/team/photo-nikolay-tarasov-270-260@1x.jpg"
-                                    alt="Фото нашего сотрудника (Николай)"  />
+                            
+                                <source media="(min-width: 1200px)" srcset="
+                                                            ./images/team/Nikolai-desktop.jpg 1x,
+                                                            ./images/team/Nikolai-desktop@2x.jpg 1x
+                                                            " />
+                            
+                                <source media="(min-width: 768px)" srcset="
+                                                            ./images/team/Nikolai-tablet.jpg 1x,
+                                                            ./images/team/Nikolai-tablet@2x.jpg 1x
+                                                            " />
+                            
+                                <img srcset="
+                                                            ./images/team/Nikolai-mobile.jpg 1x,
+                                                            ./images/team/Nikolai-mobile@2x.jpg 1x
+                                                            " class="person__photo photo" src="./images/team/Nikolai-mobile.jpg"
+                                    alt="Фото нашего сотрудника (Николай)" />
                             </picture>
                             <h3 class="person__name">Николай Тарасов</h3>
                             <p class="person__position">Marketing</p>
@@ -405,21 +408,21 @@
                         <div class="person">
                             <picture>
                             
-                                <source srcset="
-                                                  ./images/team/photo-mikhail-yermakov-450-460@1x.jpg 1x,
-                                                  ./images/team/photo-mikhail-yermakov-900-920@2x.jpg 2x
-                                                " media="(max-width: 767px)" type="image/jpeg" />
-                                <source srcset="
-                                                  ./images/team/photo-mikhail-yermakov-354-374@1x.jpg 1x,
-                                                  ./images/team/photo-mikhail-yermakov-708-748@2x.jpg 2x
-                                                " media="(max-width: 1199px)" type="image/jpeg" />
-                               
-                                <source srcset="
-                                                  ./images/team/photo-mikhail-yermakov-270-260@1x.jpg 1x,
-                                                  ./images/team/photo-mikhail-yermakov-540-520@2x.jpg 2x
-                                                " media="(min-width: 1200px)" type="image/jpeg" />
-                                <img class="person__photo photo" src="./images/team/photo-mikhail-yermakov-270-260@1x.jpg"
-                                    alt="Фото нашего сотрудника (Михаил)"  />
+                                <source media="(min-width: 1200px)" srcset="
+                                                                                        ./images/team/Mihail-desktop.jpg 1x,
+                                                                                        ./images/team/Mihail-desktop@2x.jpg 1x
+                                                                                        " />
+                            
+                                <source media="(min-width: 768px)" srcset="
+                                                                                        ./images/team/Mihail-tablet.jpg 1x,
+                                                                                        ./images/team/Mihail-tablet@2x.jpg 1x
+                                                                                        " />
+                            
+                                <img srcset="
+                                                                                        ./images/team/Mihail-mobile.jpg 1x,
+                                                                                        ./images/team/Mihail-mobile@2x.jpg 1x
+                                                                                        " class="person__photo photo"
+                                    src="./images/team/Mihail-mobile.jpg" alt="Фото нашего сотрудника (Михаил)" />
                             </picture>
 
 
